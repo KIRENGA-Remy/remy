@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Renting COMPANY.rw | <%= title %></title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+<body>
+    <div class="navigation">
+        <a href="cssPROJECT.html"><img src="houseLOGO.jpg"  id="logoH" alt=""></a>
+        <p class="Remy-Ix">Remy-Ix</p>
+        <h2>RentingCOMPANY.rw</h2><br><br>
+        <%- include('../partials/nav.ejs') %>
+    </div>
+        <div class="bubbles">
+              <img src="img/drop1.png" alt="">
+               <img src="img/drop2.png" alt="">
+               <img src="img/drop3.png" alt="">
+                <img src="img/drop4.png" alt="">
+                <img src="img/drop5.png" alt="">
+                <img src="img/drop2.png" alt="">
+                 <img src="img/drop5.png" alt="">
+                 <img src="img/drop4.png" alt="">
+                  <img src="img/drop1.png" alt="">
+                  <img src="img/drop2.png" alt="">
+    </div>
+    <div class="loginbox">
+        <img src="images.png" class="image">
+        <h1 class="loginhere">Login Here</h1>
+<form action="/users" method="POST">
+        <p class="parag">User Name</p>
+        <input type="text" class="input" name="username" placeholder="Enter Username">
+        <p class="parag">Type Password Here</p>
+        <input type="password" class="input" name="password" placeholder="Enter Password">
+        <input type="submit" id="signin" value="Login">
+        <br><br>
+<a href="#">Forgot Your Password?</a><br>
+<a href="#">Don't have an account</a><br>
+<div class="icon">
+    <a href="#" class="iconing"><ion-icon name="logo-LinkedIn"></ion-icon></a>
+    <a href="#" class="iconing"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#" class="iconing"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#" class="iconing"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#" class="iconing"><ion-icon name="logo-google"></ion-icon></a>
+    <a href="#" class="iconing"><ion-icon name="logo-skype"></ion-icon></a>
+</div>
+</form>
+<%- include('../partials/footer.ejs') %>
+<!-- <span class="CopyRight"><br><br>Copyright &copy; -by GITOLI Remy Claudien </span> -->
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
+</body>
+</html>

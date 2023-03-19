@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="users content">
+       <h2>All Users</h2>
+
+       <% if (users.length > 0) { %>
+        <% users.forEach(user => { %>
+            <h3 class="title"><%= user.title %></h3>
+            <p class="snippet"><%= user.snippet %></p>
+      <%  }) %>
+     <%  } else { %>
+        <p>There are no users to display...</p>
+     <% } %>
+    </div>
+   <br><br> <%- include('../partials/footer.ejs') %>
+</body>
+</html>

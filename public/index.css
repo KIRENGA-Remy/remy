@@ -1,0 +1,184 @@
+body {
+    background:url(swimmingpool.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+}
+nav{
+    position: absolute;
+    top: 1%;
+    margin: 0% 60%;
+    width: 30%;
+    justify-content: space-between;
+}
+.navigating{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: green;
+}
+.navigating:hover{
+    color: #fff;
+}
+#user:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.Details{
+    position: relative;
+}
+.delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 8px;
+}
+.delete:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+#RentingHouse{
+    color: #fff;
+    font-weight: bold;
+}
+.loginbox {
+    border: 5px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(000,020, 050, 0.3);
+    position: absolute; 
+    background-position: center;
+    top: 15%;
+    left: 30%;
+    width: 300px;
+    height: 72vh;
+    position: fixed;
+}
+.loginbox:hover {
+    background-color: black;
+    color: #fff;
+}
+.parag {
+    font-size: 20px;
+    margin-left: 20px;
+    color:#fff;
+}
+.loginhere {
+    text-align: center;
+}
+a:link {
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: aquamarine;
+}
+a:hover {
+    color: yellow;
+}
+#signin {
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    width: 30%;
+    cursor: pointer;
+    transform: skewX(25deg) skew(-10deg);
+}
+.input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.image {
+    background-position: absolute;
+    width: 280px;
+    height: 100px;
+    margin-left: 10px;
+}
+.iconing {
+    color: #fff;
+    position: relative;
+    right: -43%;
+}
+.iconing:hover {
+    color: yellow;
+}
+.navigation #logoH{
+    position: absolute;
+    top: 40px;
+    left: 1px;
+    width: 82px;
+    height: 80px;
+    border-radius: 15px 0px 0px 15px;
+}
+.Remy-Ix {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    cursor: pointer;
+}
+h2{
+    position: absolute;
+    top: -12px;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubbles 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -70px;
+}
+@keyframes bubbles{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(+80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 5.5s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(8){
+    animation-delay: 9s;
+}
+.bubbles img:nth-child(9){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(10){
+    animation-delay: 5s;
+}
+.CopyRight{
+    position: absolute;
+    top: 97%;
+    color: #fff;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/nav.ejs') %>
+<div class="Details content">
+  <h2><%= user.title %></h2>
+  <div class="content">
+    <p> <%= user.body %></p>
+  </div>
+  <a class="delete" data-doc="<%= user._id %>">delete</a>
+</div>
+    <%- include('../partials/footer.ejs') %>
+
+    <script>
+        const trashcan = document.querySelector('a.delete')
+        trashcan.addEventListener('click', (e) =>{
+
+            // Where to direct/send the delete request
+            const endpoint = `/users/${trashcan.dataset.doc}`;
+            fetch(endpoint,{
+                method:'DELETE'
+            })
+            .then((response)=>{response.json})
+            .then((data) => window.location.href = data.redirect)
+            .catch(err => console.log(err));
+            })
+    </script>
+</body>
+</html>
